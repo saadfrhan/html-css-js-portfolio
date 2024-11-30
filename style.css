@@ -32,7 +32,9 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
 }
 
@@ -51,7 +53,9 @@ h3 {
   color: var(--primary-color);
 }
 
-p, a, li {
+p,
+a,
+li {
   font-weight: 400;
   text-wrap: wrap;
 }
@@ -76,7 +80,7 @@ nav a {
 
 /* Sections */
 section {
-  padding: 3rem 2rem;
+  padding: 0.5rem;
 }
 
 section > h2 {
@@ -145,7 +149,8 @@ form textarea:focus {
 
 /* Form button & CV Download button */
 
-form button, .cv-download {
+form button,
+.cv-download {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
@@ -157,7 +162,8 @@ form button, .cv-download {
   border-radius: 4px;
 }
 
-form button:hover, .cv-download:hover {
+form button:hover,
+.cv-download:hover {
   background-color: var(--primary-color-hover);
 }
 
@@ -240,5 +246,15 @@ p {
 
   .project {
     margin: 1rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  textarea {
+    width: 100%;
+    box-sizing: border-box;
   }
 }

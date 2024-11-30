@@ -2,6 +2,8 @@
 
 Portfolio website created using HTML, CSS, and JavaScript.
 
+<img src="./preview.png">
+
 ## Setup
 
 ```bash
