@@ -1,0 +1,244 @@
+:root {
+  color-scheme: light dark;
+  --primary-color: #4caf50;
+  --primary-color-hover: #45a049;
+  --font-family: "Quicksand", sans-serif;
+  --border-radius: 9px;
+  --padding: 1rem;
+  --margin: 1rem;
+  --transition-duration: 300ms;
+
+  /* Color Variables */
+  --background-color: light-dark(#ffffff, #000000);
+  --text-color: light-dark(#000000, #ffffff);
+  --border-color: light-dark(#ccc, #444);
+  --project-bg: light-dark(#e2e2e2, #333);
+}
+
+/* General Resets */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  line-height: 1.6;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--primary-color);
+}
+
+p, a, li {
+  font-weight: 400;
+  text-wrap: wrap;
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  color: light-dark(white, black);
+  padding: var(--padding) 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+nav a {
+  margin: 0 var(--padding);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Sections */
+section {
+  padding: 3rem 2rem;
+}
+
+section > h2 {
+  margin-bottom: 2rem;
+}
+
+/* Projects */
+.project {
+  border: 1px solid var(--border-color);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  margin: var(--margin) 0;
+  background-color: var(--project-bg);
+  transition: transform var(--transition-duration);
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.project ul {
+  list-style-type: none;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: #fff;
+  transition-duration: var(--transition-duration);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.project a:hover {
+  background-color: var(--primary-color-hover);
+}
+
+/* Forms */
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  border-radius: var(--border-radius);
+  padding: 10px;
+  margin: 0.5rem 0;
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: border-color var(--transition-duration);
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Form button & CV Download button */
+
+form button, .cv-download {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: var(--primary-color);
+  color: #fff;
+  transition-duration: var(--transition-duration);
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+form button:hover, .cv-download:hover {
+  background-color: var(--primary-color-hover);
+}
+
+.cv-download {
+  margin-top: 1.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0.25rem;
+  background-color: var(--primary-color);
+  color: white;
+  line-height: 0.6;
+}
+
+footer p {
+  font-weight: 800;
+}
+
+footer a {
+  color: white;
+}
+
+/* Profile Photo */
+.photo {
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 5px solid var(--primary-color);
+}
+
+/* Content Container */
+.content {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+}
+
+/* Testimonials */
+.testimonial {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.testimonial blockquote {
+  background-color: var(--project-bg);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  border-left: 5px solid var(--primary-color);
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  text-align: right;
+  font-weight: 500;
+}
+
+/* Lists */
+section > li {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* General Layout Adjustments */
+@media (max-width: 768px) {
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .project {
+    margin: 1rem 0;
+  }
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css-reset.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="theme-toggle-button" onclick="toggleTheme()"> Theme </a>
+      </nav>
+    </header>
+
+    <div class="content">
+      <section id="about">
+        <h2>About Me</h2>
+        <img src="./images/my-photo.jpg" alt="Your Name" class="photo" />
+        <p>
+          Hello! 👋 I'm <strong>Alex Taylor</strong>, a passionate
+          <strong>Frontend Developer</strong> specializing in
+          <strong
+            >responsive web design, UI/UX development, and interactive web
+            applications</strong
+          >. With a strong foundation in
+          <strong>modern web technologies</strong>, I love turning creative
+          ideas into seamless digital experiences.
+        </p>
+
+        <p>
+          I have <strong>4+ years</strong> of experience working on
+          <strong>web-based projects</strong>, where I've had the opportunity to
+          <strong
+            >optimize website performance, enhance user engagement, and
+            implement modern design systems</strong
+          >. My proudest achievement was
+          <strong>reducing page load time by 50%</strong> for a high-traffic
+          e-commerce website.
+        </p>
+
+        <p>
+          Beyond the screen, I’m passionate about
+          <strong>exploring new design trends</strong>, and I strongly believe
+          in <strong>"creating user-first experiences"</strong>. My goal is to
+          use my skills to
+          <strong>build impactful digital solutions</strong> that inspire and
+          connect people globally.
+        </p>
+
+        <h3>Skills & Expertise</h3>
+        <ul>
+          <li>
+            🌟 <strong>Languages:</strong> HTML, CSS, JavaScript, TypeScript
+          </li>
+          <li>
+            🌟 <strong>Frameworks & Libraries:</strong> React, Vue.js, Tailwind
+            CSS
+          </li>
+          <li>🌟 <strong>Tools:</strong> Git, Figma, VS Code, Webpack</li>
+          <li>
+            🌟 <strong>Soft Skills:</strong> Problem-solving, Creativity,
+            Collaboration
+          </li>
+        </ul>
+
+        <h3>Fun Facts</h3>
+        <ul>
+          <li>
+            🌱 I’m currently learning <strong>Next.js and Three.js</strong>.
+          </li>
+          <li>
+            📚 My favorite book is
+            <strong>"Atomic Habits" by James Clear</strong>.
+          </li>
+          <li>
+            🌍 I’ve traveled to <strong>8 countries</strong> and love exploring
+            new cultures!
+          </li>
+        </ul>
+
+        <a href="./files/your-resume.pdf" class="cv-download" download>
+          Download Resume
+        </a>
+
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+          <h3>UpTask</h3>
+          <p>
+            This project is a web application that allows users to track their
+            daily tasks and manage their time efficiently. It features a
+            user-friendly interface, drag-and-drop functionality, and real-time
+            updates.
+          </p>
+          <ul>
+            <li>Technologies used: HTML, CSS, JavaScript, React</li>
+          </ul>
+          <a href="https://github.com/username/project1" target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+        <div class="project">
+          <h3>Fitify</h3>
+          <p>
+            This project is a mobile application designed to help users monitor
+            their fitness activities. It includes features such as activity
+            tracking, goal setting, and progress reports.
+          </p>
+          <ul>
+            <li>Technologies used: Flutter, Dart, Firebase</li>
+          </ul>
+          <a href="https://github.com/username/project2" target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+          <blockquote>
+            "Alex's attention to detail and innovative solutions transformed our website! Highly recommended."
+          </blockquote>
+          <p>- John Doe, CEO of XYZ Company</p>
+        </div>
+        <div class="testimonial">
+          <blockquote>
+            "A creative developer who understands both design and functionality. It was a pleasure working with Alex."
+          </blockquote>
+          <p>- Jane Smith, Product Manager at ABC Corp</p>
+        </div>
+      </section>      
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+        <br />
+        <p>Let's connect! Find me on:</p>
+        <ul>
+          <li><a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/username" target="_blank">GitHub</a></li>
+          <li><a href="https://twitter.com/username" target="_blank">Twitter</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Alex Taylor. All rights reserved.</p>
+      <p>Email: <a href="mailto:alex@example.com" target="_blank">alex@example.com</a></p>
+      <p>Phone: +123 456 7890</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
